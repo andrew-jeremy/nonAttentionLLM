@@ -63,8 +63,8 @@ python train.py \
   --batch_size 4
 
   ## Inference
-  python example_inference.py \
-  --checkpoint best_model.pt \
+  python train.py --train "False" \
+  --checkpoint "yourcheckpoint.pt" \
   --prompt "Summarize:\nThe cat is a domestic species of small carnivorous mammal..."
 
   It will:
